@@ -1,0 +1,159 @@
+
+/* Typography & Layout */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  max-width: 760px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #000;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+h4 {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  border-top: 1px solid #eee;
+  padding-top: 0.4rem;
+}
+
+/* Buttons */
+button {
+  background-color: #f60;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #e55a00;
+}
+
+/* Secret display */
+.secret-container {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.blurred {
+  filter: blur(7px);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.unblurred {
+  filter: none;
+}
+
+/* QR Display */
+.qr-holder {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Leaderboard */
+.leaderboard ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.leaderboard li {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+/* Timer & Stats */
+.timer {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+#dropStats {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Drop entries */
+.drop-entry {
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #eee;
+  font-size: 0.9rem;
+}
+
+em {
+  font-style: normal;
+  color: #f60;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .secret-container {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+body.dark .drop-entry {
+  border-bottom: 1px dotted #444;
+}
+
+body.dark .timer {
+  color: #ccc;
+}
+
+body.dark em {
+  color: #ffa94d;
+}
+
+body.dark button {
+  background-color: #ffa94d;
+  color: #111;
+}
+
+body.dark button:hover {
+  background-color: #ff861e;
+}
+
+/* Animated transitions for appearance */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.secret-container, .timer, #darkToggle, .leaderboard, #allDrops {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
